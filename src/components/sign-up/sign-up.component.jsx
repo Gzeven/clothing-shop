@@ -4,6 +4,7 @@ import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
 import {auth, createUserProfileDocument} from '../../firebase/firebase.utils';
 
+
 class SignUp extends React.Component {
     constructor() {
         super();
@@ -32,10 +33,11 @@ class SignUp extends React.Component {
             password: '',
             confirmPassword: ''
         });
-        
+       
     } catch (error) {
     console.error(error)
        }
+      
     }
 
     handleChange = event => {
